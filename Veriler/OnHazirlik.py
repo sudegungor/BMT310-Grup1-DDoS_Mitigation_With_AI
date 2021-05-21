@@ -1,13 +1,6 @@
 from sklearn import preprocessing
 import pandas as pd
-import numpy as np
-from matplotlib import pyplot as plt
-
-
-veriler = pd.read_csv('RahatGor.csv')
-
-# with open('verilerinAciklamasi.txt', 'w') as file:
-#     file.write(str(veriler.describe(include = 'all')))
+import os
 
 def donustur(data, index):
     oneHotEncoder = preprocessing.OneHotEncoder()
@@ -22,32 +15,33 @@ def donustur(data, index):
     return pd.concat([tmp, data.drop(columns=[data.columns[index]])], axis=1)
     #print(data.columns)
 
+def veriHazirla(X):
+    try:
+        X = donustur(X, X.columns.get_loc('service'))
+        X = donustur(X, X.columns.get_loc('protocol_type'))
+        X = donustur(X, X.columns.get_loc('flag'))
+        return X
+    except KeyError:
+        return X
 
 
-Y = veriler['outcome']
-y = veriler.values # Seriden --> numpy dizisine çeviriyorum
-X = veriler.drop(columns=['outcome']) # --> Y ulaşmak istediğimiz sonuç X ise parametrelerimiz
-x = veriler.values
-
-print(X.shape) # (4940, 42)
-print(Y.shape) # (4940,)
-
-X = donustur(X,X.columns.get_loc('service'))
-X = donustur(X,X.columns.get_loc('protocol_type'))
-X = donustur(X,X.columns.get_loc('flag'))
-
-print(len(X.columns))
-print('x:', len(X), ' Y: ', len(Y)) # x: 4940  Y:  4940 farklı olmasını beklemiyorduk zaten
-Y = pd.DataFrame(data = Y.values, columns=['outcome'])
-X = pd.concat([X,Y], axis=1)
-X.to_csv('BakalımOlmusMu.csv')
+path = os.getcwd()
+veriler = pd.read_csv(path + '/Veriler/RahatGor.csv')
 
 
 
-
-
-
-
+# Y = veriler['outcome']
+# y = veriler.values # Seriden --> numpy dizisine çeviriyorum
+# X = veriler.drop(columns=['outcome']) # --> Y ulaşmak istediğimiz sonuç X ise parametrelerimiz
+# x = veriler.values
+#
+# X = donustur(X,X.columns.get_loc('service'))
+# X = donustur(X,X.columns.get_loc('protocol_type'))
+# X = donustur(X,X.columns.get_loc('flag'))
+#
+# Y = pd.DataFrame(data = Y.values, columns=['outcome'])
+# X = pd.concat([X,Y], axis=1)
+# X.to_csv('islenmeyeHazir.csv')
 
 
 '''

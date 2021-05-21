@@ -43,6 +43,16 @@ Bu kolonları sayısal verilere çeviriyoruz.
 ##### DOĞRULUK ORANI
 0.9755
 
+<hr>
+
+### Modülerlik
+
+Projemizde KNN, Decision tree ... algoritmalarını kullanarak tespit yapabiliyoruz. Bu algoritmalar birbirleri
+yerine geçebileceği için tamamı belli bir standartta yazıldı. tek bir satırla tahmin algoritması daha başarılı
+algoritmayla değiştirilebilecek, yeni algoritmalar da sisteme eklenebilecek. 
+Yapılan testlerle aldığımız kararlar sonucunda yazılım güncellemelerinde
+bu değişiklikler uygulanacaktır.    
+
 ## TASARIM
 
 

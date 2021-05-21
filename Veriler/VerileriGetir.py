@@ -1,9 +1,10 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
-veriler = pd.read_csv('Veriler/BakalımOlmusMu.csv')
-Y = veriler['outcome']
-X = veriler.drop(columns=['outcome'])
+import os
 
+veriler = pd.read_csv('Veriler/islenmeyeHazir.csv')
+Y = veriler['outcome']
+X = veriler.drop(columns=['outcome','Unnamed: 0'])
 def verileriGetir():
 
     #işlemler numpy dizileri üzerinden işleyeceği için
