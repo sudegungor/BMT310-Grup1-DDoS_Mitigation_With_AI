@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-from DecisionTreeTahmin import tahminEt
+from Bayesian import tahminEt
 from Veriler.VeriIsleme import veriHazirla
 
 # Burası bir simulasyondur.
@@ -12,7 +12,7 @@ path = os.getcwd()
 veri = pd.read_csv(path + '/Veriler/RahatGor.csv')
 X = veri.drop(columns=['outcome'])
 X = veriHazirla(X)
-tmp = X[19:20]
+tmp = X[:5]
 
 tahmin = tahminEt(tmp)
 print(tahmin)

@@ -19,7 +19,7 @@ service<br/>
 Bu kolonları sayısal verilere çeviriyoruz.
 
 #### Örnek olarak
-![](KategorikVeriler.png)
+![](Plotlar/KategorikVeriler.png)
 
 ### Tahminler
 
@@ -42,6 +42,16 @@ Bu kolonları sayısal verilere çeviriyoruz.
 
 ##### DOĞRULUK ORANI
 0.9755
+
+#### Random Forest 
+
+##### Doğruluk matrisi (confusion matrix)
+
+![](Plotlar/RandomForestConfMat.png)
+
+#### DOĞRULUK ORANI
+
+0.9969
 
 <hr>
 
