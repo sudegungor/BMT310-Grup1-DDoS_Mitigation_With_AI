@@ -1,8 +1,9 @@
 import pandas as pd
 import os
-
-from Bayesian import tahminEt
-from Veriler.VeriIsleme import veriHazirla
+import datetime
+from DecisionTreeTahmin import tahminEt     # Gerekli
+from Raporlama.Rapor import Rapor           # Gerekli
+from Veriler.VeriIsleme import veriHazirla  # Gerekli
 
 # Burası bir simulasyondur.
 # Gerçekte veri kaynağı eşzamanlı
@@ -12,7 +13,16 @@ path = os.getcwd()
 veri = pd.read_csv(path + '/Veriler/RahatGor.csv')
 X = veri.drop(columns=['outcome'])
 X = veriHazirla(X)
-tmp = X[:5]
+trafik = X[:10]
 
-tahmin = tahminEt(tmp)
-print(tahmin)
+tahminler = tahminEt(trafik)
+
+rapor = Rapor()
+
+for tahmin in tahminler:
+    if tahmin == 'normal.':
+        pass
+    else:
+        rapor.log(tahmin, datetime.datetime.now())
+
+rapor.raporla()
