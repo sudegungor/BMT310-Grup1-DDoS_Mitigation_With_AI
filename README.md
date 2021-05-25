@@ -68,3 +68,10 @@ bu değişiklikler uygulanacaktır.
 
 
 ## SAVUNMA
+
+## RAPORLAMA
+
+Sistem anormal trafikleri tespit ettiğinde log kayıtları tutuyor. Kullanıcı istediği zaman
+excel dosyası olarak bu kayıtları dökümleyebiliyor.
+
+![](Plotlar/rapor.png)
