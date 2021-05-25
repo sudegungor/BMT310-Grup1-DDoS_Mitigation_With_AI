@@ -1,7 +1,11 @@
 import pandas as pd
 from datetime import datetime
+
+
 class Rapor:
-    logkayitlari = [[[]]]
+    logkayitlari = [['','','']]
+
+
     def raporla(self):
         pd.DataFrame(
             data=self.logkayitlari[1:],
@@ -12,3 +16,4 @@ class Rapor:
         self.logkayitlari.append([log,
                                   datetime.date(zaman),
                                   datetime.time(zaman)])
+
