@@ -1,0 +1,112 @@
+#anacerceve {
+	color: #f39c12;
+	margin: auto;
+	height: 726px;
+	width: 1500px;
+	border: thin solid #000000;
+}
+#icerik {
+	background-image: url(bannerDDoS.png);
+	height: 100px;
+	width: 900px;
+
+}
+#ustmenu {
+	height: 35px;
+	width: 1500px;
+	border: thin solid #000000;
+}
+#ustmenu {
+	height: 60px;
+	width: 899px;
+	border: thin solid #000000;
+	
+}
+#icerik1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #000000;
+	background-color: #EB4E00;
+	float: left;
+	height: 521px;
+	width: 1250px;
+	margin-top: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: 2px;
+	border: thin solid #000000;
+	list-style-type: square;
+	
+}
+#sagblok {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	background-color:#e65c00;
+	padding: 5px;
+	float: right;
+	height: 540px;
+	width: 230px;
+	margin-right: 2px;
+	margin-bottom: 5px;
+	margin-left: auto;
+	border: thin solid #000000;
+	color:#000000;
+}
+#sagblok {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background-color: #e65c00;
+	float: right;
+	height: 511px;
+	width: 220px;
+	margin-right: 2px;
+	margin-bottom: 5px;
+	margin-left: auto;
+	border: thin solid #000000;
+	color:#000000;
+}
+#sagbaslık {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #000;
+	margin: 5px;
+	height: 25px;
+	width: 210px;
+	border: thin solid #000000;
+	background-color:#d35400;
+}
+#sagic1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	margin: 2px;
+	height: 230px;
+	width: 220px;
+	border: thin solid #e65c00;
+}
+#sagic2 {
+	margin: 2px;
+	height: 230px;
+	width: 220px;
+	border: thin solid #e65c00;
+}
+#altbilgi {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 13px;
+	font-style: italic;
+	font-weight: bold;
+	background-color: #e65c00;
+	margin: auto;
+	height: 50px;
+	width: 1495px;
+	border: thin solid #000000;
+	clear: both;
+	color: #000000;
+}
+.scroll {
+  width: 500px;
+  height: 100px;
+  overflow: auto;
+  background: #565656;
+  color: #fff;
+}
+
