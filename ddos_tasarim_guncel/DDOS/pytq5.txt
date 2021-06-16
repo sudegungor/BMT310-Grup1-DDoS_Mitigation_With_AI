@@ -1,0 +1,3 @@
+plot canvas: veri setini görselleştirmek için kullanılır.
+spinbox:kaç adet kümeye ayıracağımızı seçmek(key degeri seçmek)
+list:sonuc görmek
