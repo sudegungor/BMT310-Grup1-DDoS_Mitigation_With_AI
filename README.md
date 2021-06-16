@@ -43,6 +43,18 @@ Bu kolonları sayısal verilere çeviriyoruz.
 ##### DOĞRULUK ORANI
 0.9755
 
+## TASARIM
+#### DDoS Mitigation With AI masaüstü programı arayüz tasarımı aşağıdaki gibidir. Bu ekranda yapılan saldırı, tarih,zaman bilgileri gösterilecektir, nunun için "Rapor" butonuna basılmalıdır. Ayrıca firmada çalışan ve  DDoS Mitigation With AI masaüstü programını kullanan çalışanların bilgilerine "Kullanıcı Bilgileri" butonuna basarak görüntülenebilecektir.
+![image](https://user-images.githubusercontent.com/66336394/122273816-8a20b300-ceea-11eb-9ba7-19c8284a6e13.png)
+
+#### DDoS Mitigation With AI masaüstü programında bir sorun oluştuğunda kullanıcılar "Ticket Oluştur" butonuna basarak oluşan hataları yazabileceklerdir.
+![image](https://user-images.githubusercontent.com/66336394/122274165-ed124a00-ceea-11eb-836a-f9d6b0c04161.png)
+
+
+
+
+
+
 ## WEB SİTESİ
 ####    Kullanıcılar bu web sitesini kullanarak DDoS Mitigation With AI masaüstü programını güncelleyebileceklerdir. 
 #### DDoS Mitigation With AI web sitesinin anasayfası ekran fotoğrafı aşağıdadır.
@@ -62,7 +74,6 @@ Bu kolonları sayısal verilere çeviriyoruz.
 ![image](https://user-images.githubusercontent.com/66336394/122266077-14b0e480-cee2-11eb-91ba-740ed228d8de.png)
 
 
-## TASARIM
 
 
 
